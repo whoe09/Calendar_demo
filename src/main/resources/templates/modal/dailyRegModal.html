@@ -1,0 +1,41 @@
+<div class="modal fadeindown" id="dailyLogModal" role="dialog" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">
+                    근무자 등록 관리
+                </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fal fa-times"></i></span>
+                </button>
+            </div>
+            <div class="modal-body" style="height:580px;overflow-y: auto ">
+                <form id="dailyLogInfoForm">
+                    <div class="row">
+                        <div class="form-group col-lg-12">
+                            <label for="dailyRegDate">
+                                <input type="text" class="form-control" id="dailyRegDate"
+                                       autocomplete="off" name="dailyRegDate">
+                            </label>
+                        </div>
+                        <div class="form-group col-lg-12" id="logContent">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary waves-effect waves-themed add-btn"
+                        id="dailyLogAddBtn">등록
+                </button>
+<!--                <button type="button" class="btn btn-primary waves-effect waves-themed modify-btn d-none"-->
+<!--                        id="dailyLogModifyBtn">수정-->
+<!--                </button>-->
+<!--                <button type="button" class="btn btn-info waves-effect waves-themed save-btn d-none"-->
+<!--                        id="dailyLogSaveBtn">저장-->
+<!--                </button>-->
+                <button type="button" class="btn btn-secondary waves-effect waves-themed" data-dismiss="modal">닫기
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
